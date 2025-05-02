@@ -1,43 +1,32 @@
 #include <stdio.h>
+int main(){
+     //Cadastro
+     int p1 = 800000 ,p2 = 600000, pt1 = 250, pt2 = 200; 
+     float area1 = 4500, area2 = 5500,pib1 = 300000000, pib2 = 200000000 , d1, d2, pibper1, pibper2; 
+     char pais1[20]= "Brasil";
+     char pais2[20]= "Argentina";
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-
+    //Calcúlos
+    d1 = p1 / area1, d2 = p2 / area2;
+    pibper1 = pib1 / p1, pibper2 = pib2 / p2;
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
-
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
+    //Comparação
+    printf("### Super Trunfo ###\n");
+    printf("O atributo é: População\n");
+    if(p1 > p2){
+        printf("### Comparando... ###\n");
+        printf("Brasil: %d\n", p1);
+        printf("Argentina: %d\n", p2);
+        printf("Venceu Brasil!\n");
+    } else if (p1 < p2){
+        printf("Brasil: %d\n", p1);
+        printf("Argentina: %d\n", p2);
+        printf("Venceu Argentina!\n");
+    } else {
+        printf("Brasil: %d\n", p1);
+        printf("Argentina: %d\n", p2);
+        printf("Empate!\n");
+    }
     return 0;
+
 }
