@@ -4,11 +4,16 @@
 int main(){
     //Cadastro
     int valor1, valor2, opcao, opcao2,resultado, resultado2,
-     p1 = 8000000 ,p2 = 6000000, pt1 = 250, pt2 = 200;
-    float area1 = 4500, area2 = 5500,pib1 = 300, pib2 = 200 , d1, d2, soma, soma2, carta1, carta2; 
+     p1 = 8000000 ,p2 = 6000000, pt1 = 200, pt2 = 250;
+    float area1 = 4500, area2 = 5500,pib1 = 300, pib2 = 250 , d1, d2, soma, soma2, carta1, carta2; 
     char pais1[20]= "Brasil", pais2[20]= "Argentina";
     char a[50], b[50];
-    
+    //PIB está em bilhões e resumido para facilitar o entendimento
+    //População está em milhões
+    //Pontos turísticos está em número de pontos
+    //Área está em km²
+    //Densidade demográfica está em habitantes por km²
+
 
     //Cálculo da densidade demográfica
     d1 = p1 / area1;
@@ -110,6 +115,7 @@ int main(){
     }
     }
     // Exibir os resultados
+    if(opcao != opcao2){
     valor1 = soma + carta1;
     valor2 = soma2 + carta2;
     printf("Paises: %s e %s\n", pais1, pais2);
@@ -126,5 +132,7 @@ int main(){
     }else{
         printf("Empate!\n");
     }
+}  return 0;
 }
+
    
